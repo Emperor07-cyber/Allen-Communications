@@ -1,0 +1,123 @@
+*{
+    font-family: montserrat;
+}
+.navbarNav ul li a::after{
+        content: '';
+        width: 0;
+        height: 4px;
+        background-color: aqua;
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+        transition: 0.5s;
+    }
+.navbarNav ul li a b:hover::after{
+        width: 100%;
+}
+.container3{
+    background: linear-gradient(blue,green);
+    background-repeat: nrepeat;
+    background-size: contain;
+}
+.container2{
+    background: linear-gradient(blue,cyan);
+}
+.navbarNav{
+    color: beige;
+}
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h4{
+    font-size: 45px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption a{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.navbar-Light .navbar-brand{
+    width: 70px;
+}
+.navbar-Light .navbar-brand:focus,
+.navbar-Light .navbar-brand:hover{
+    color: aqua;
+}
+.w-100{
+    height: 100vh;
+}
+.h2{
+   padding-left: 100px ;
+   text-align: center; 
+   display: flex;
+   left: 50%;
+   position: absolute;
+   padding: 0%;
+   font-size: 50px;
+}
+.table{
+    position:absolute;
+    top:100px;
+    left:100px;
+    right:120px;
+    border:solid 4px green;
+}
+.td{
+    text-align: center;
+    border:solid 1px green;
+    padding:3px;
+}
+.th{
+    background-color: green;
+    color:white;
+    border:solid 1px green;
+}
+.tr{
+    color:green;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .carousel-caption{
+        bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption h4{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+}
